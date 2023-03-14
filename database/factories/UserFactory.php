@@ -16,11 +16,11 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
-            'name' => 'Admin',
-            'email' => 'admin@hotmail.com',
-            'email_verified_at' => now(),
-            'password' => Hash::make('level34676544569') , // password
-            'remember_token' => Str::random(10),
+            'name'=>'Admin',
+            'email'=>'admin@hotmail.com',
+            'email_verified_at'=>now(),
+            'password'=>Hash::make('level34676544569') , // password
+            'remember_token'=>Str::random(10),
             'estado'=>'admin',
         ];
     }

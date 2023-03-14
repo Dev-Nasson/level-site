@@ -6,11 +6,6 @@
     <!-- Sidebar -->
 
 
-
-
-
-
-
     <!-- start page content -->
     <div class="page-content-wrapper">
         <div class="page-content">
@@ -70,7 +65,7 @@
                                         </label>
 
                                         <div class="col-md-5">
-                                            <input type="text" name="nome" data-required="1"
+                                            <input type="text" name="titulo" data-required="1"
                                                 placeholder="Insira o nome do Inicio" class="form-control input-height "
                                                 value="{{ $Inicio->titulo }}" />
 

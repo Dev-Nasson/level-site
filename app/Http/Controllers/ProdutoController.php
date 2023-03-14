@@ -52,7 +52,7 @@ class ProdutoController extends Controller
 
 
         public function segeridos($id){
-            
+
             $segeridos = DB::table('produtos')
             ->where('produtos.id','!=',$id)
             ->join('imagems','produtos.imagem_id','imagems.id')
@@ -144,14 +144,11 @@ class ProdutoController extends Controller
             Image::make($img_um)->resize(640,421)->save('levelschool/img/produtos/500/500v712_' . $nome_500_um);
             $nm_500_um = 'img/produtos/500/500v712_' . $nome_500_um;
 
-
             // IMAGEM 2
             $img_um = $request->file('imagem_produto');
             $nome_370_um = hexdec(uniqid()) . '.' . $img_um->getClientOriginalExtension();
-            Image::make($img_um)->resize(370,370)->save('levelschool/img/produtos/370/370v370_' . $nome_370_um);
+            Image::make($img_um)->resize(380,230)->save('levelschool/img/produtos/370/370v370_' . $nome_370_um);
             $nm_370_um = 'img/produtos/370/370v370_' . $nome_370_um;
-
-
 
             // IMAGEM 3
             $img_um = $request->file('imagem_produto');
@@ -163,8 +160,6 @@ class ProdutoController extends Controller
             $nome_100_um = hexdec(uniqid()) . '.' . $img_um->getClientOriginalExtension();
             Image::make($img_um)->resize(100, 60)->save('levelschool/img/produtos/100/100v60_' . $nome_100_um);
             $nm_100_um = 'img/produtos/100/100v60_' . $nome_100_um;
-
-
 
         } else {
             $nm_500_um = '';
@@ -234,20 +229,19 @@ class ProdutoController extends Controller
 
     public function update(Request $request, $id){
 
-        $produto = Produto::find($id);
-        $pegaIMG = Imagem::where('id',$produto->imagem_id)->first();
+            $produto = Produto::find($id);
+            $pegaIMG = Imagem::where('id',$produto->imagem_id)->first();
+            $nome = $produto->nome;
+            $descricao = $produto->descricao;
+            $nome_dois = $produto->nome_dois;
+            $nm_500_um = $pegaIMG->imagem_padrao;
+            $nm_100_um = $pegaIMG->imagem_mini;
+            $nm_370_um = $pegaIMG->imagem_um;
+            $nm_598_um = $pegaIMG->imagem_dois;
+            $data = $request->all();
 
-        $nome = $produto->nome;
-        $descricao = $produto->descricao;
-        $nome_dois = $produto->nome_dois;
-        $nm_500_um = $pegaIMG->imagem_padrao;
-        $nm_100_um = $pegaIMG->imagem_mini;
-        $nm_370_um = $pegaIMG->imagem_um;
-        $nm_598_um = $pegaIMG->imagem_dois;
-        $data = $request->all();
-
-       // $pegaproduto = Produto::where('id',$id)->first();
-      //  $pagaImgpro = Imagem::where('id',$pegaproduto->imagem_id)->first();
+            // $pegaproduto = Produto::where('id',$id)->first();
+            //  $pagaImgpro = Imagem::where('id',$pegaproduto->imagem_id)->first();
 
         if (!empty($request->file('imagem_produto'))) {
 
@@ -266,7 +260,6 @@ class ProdutoController extends Controller
                 $nm_100_um = 'img/produtos/100/100v60_' . $nome_100_um;
                 $data['imagem_mini'] = $nm_100_um;
 
-
                // IMAGEM 2
                $img_um = $request->file('imagem_produto');
                $nome_370_um = hexdec(uniqid()) . '.' . $img_um->getClientOriginalExtension();
@@ -274,17 +267,12 @@ class ProdutoController extends Controller
                $nm_370_um = 'img/produtos/370/370v370_' . $nome_370_um;
                $data['imagem_um'] = $nm_370_um;
 
-
-
                // IMAGEM 3
                $img_um = $request->file('imagem_produto');
                $nome_598_um = hexdec(uniqid()) . '.' . $img_um->getClientOriginalExtension();
                Image::make($img_um)->resize(598,564)->save('levelschool/img/produtos/598/598v598_' . $nome_598_um);
-               $nm_598_um = 'img/produtos/598/598v598_' . $nome_598_um;
+               $nm_598_um ='img/produtos/598/598v598_' . $nome_598_um;
                $data['imagem_dois'] = $nm_598_um;
-
-
-
 
            } else {
                $nm_500_um = '';
@@ -293,16 +281,11 @@ class ProdutoController extends Controller
                $nm_100_um = '';
            }
 
-
-
         }
 
         if ($produto->update($data) &&  $pegaIMG->update($data)) {
             return redirect()->route('produto.index')->withSuccessMessage('produto atualizado com êxito');
         }
-
-
-
 
     }
 
@@ -314,17 +297,22 @@ class ProdutoController extends Controller
         $produto = DB::table('produtos')
         ->where('produtos.id',$id)
         ->join('imagems','produtos.imagem_id','imagems.id')
-        ->select('imagems.imagem_padrao','imagems.imagem_mini')
+        ->select('imagems.imagem_padrao','imagems.imagem_mini','imagems.imagem_um','imagems.imagem_dois')
        ->first();
 
         //$inicio = DB::table('produtos')->where('id',$id)->first();
         $imgPadrao = $produto->imagem_padrao;
         $imgMini = $produto->imagem_mini;
+        $imagem_um = $produto->imagem_um;
+        $imagem_dois = $produto->imagem_dois;
 
-        if ($imgPadrao && $imgMini) {
+
+        if ($imgPadrao && $imgMini && $imagem_um && $imagem_dois) {
          // unlink($photo);
           unlink('levelschool/'.$produto->imagem_padrao);
           unlink('levelschool/'.$produto->imagem_mini);
+          unlink('levelschool/'.$produto->imagem_um);
+          unlink('levelschool/'.$produto->imagem_dois);
           DB::table('produtos')->where('id',$id)->delete();
           DB::table('imagems')->where('id',$idImagem->imagem_id)->delete();
 

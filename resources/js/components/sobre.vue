@@ -1,5 +1,4 @@
 <template>
-
     <div>
 
         <!--====== Start Page-banner section ======-->
@@ -16,7 +15,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="page-title">
-                            <h1> Sobre nós Levelsoft tudo bem </h1>
+                            <h1> Sobre nós </h1>
                             <ul class="breadcrumbs-link">
                                 <li><a href="index.html">Home</a></li>
                                 <li class="active"> Sobre nós </li>
@@ -36,7 +35,6 @@
             </div>
         </section>
         <!--====== End Page-banner section ======-->
-
 
         <!--====== Start About section ======-->
         <section class="about-area about-area-v3 pt-210 pb-50">
@@ -80,6 +78,8 @@
                 </div>
             </div>
         </section><!--====== End About section ======-->
+
+
 
         <section class="service-area pt-50 pb-80 " style="background-color:#fbfbfb;">
             <div class="container">
@@ -132,8 +132,8 @@
             </div>
         </section>
 
-    </div>
 
+    </div>
 </template>
 
 

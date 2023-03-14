@@ -12,8 +12,7 @@ use Image;
 use DB;
 use Illuminate\Http\Request;
 
-class SobreController extends Controller
-{
+class SobreController extends Controller {
 
     public function index(){
 
@@ -28,7 +27,6 @@ class SobreController extends Controller
        ->get();
         return view('admin.sobre.index',compact('artigos'));
     }
-
 
      public function sobressegu(){
 
@@ -68,10 +66,6 @@ class SobreController extends Controller
      }
 
 
-
-
-
-
     public function create(){
 
         return view('admin.sobre.create');
@@ -104,8 +98,6 @@ class SobreController extends Controller
 
                  if (!empty($request->file('imagem_produto') ) ) {
 
-
-
                 if ($seccao==1) {
 
                             // IMAGEM 1
@@ -117,8 +109,6 @@ class SobreController extends Controller
              $nome_100_um = hexdec(uniqid()).'.'.$img_um->getClientOriginalExtension();
              Image::make($img_um)->resize(100,60)->save('levelschool/img/produtos/100/100v60_'.$nome_100_um);
              $nm_100_um = 'img/produtos/100/100v60_'.$nome_100_um;
-
-
 
                 } elseif ($seccao==2) {
 
@@ -145,18 +135,12 @@ class SobreController extends Controller
                             $nome_100_um = hexdec(uniqid()).'.'.$img_um->getClientOriginalExtension();
                             Image::make($img_um)->resize(100,60)->save('levelschool/img/produtos/100/100v60_'.$nome_100_um);
                             $nm_100_um = 'img/produtos/100/100v60_'.$nome_100_um;
-
-
                 }
-
-
-
 
              }else {
              $nm_500_um ='';
              $nm_100_um ='';
              }
-
 
 
              $Imageprod =Imagem::create([

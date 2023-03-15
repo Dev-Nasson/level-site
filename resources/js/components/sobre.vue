@@ -62,12 +62,16 @@
                                 <p class="blue-dark"> Level-Soft - Tecnologias de Investigação e Desenvolvimento </p>
                             </div>
 
-                            <p v-if="sobressegu.descricao.length > 100" style="text-align: justify;">
+                            <p style="text-align: justify;" v-show="!descricaosobre">
                                 {{ sobressegu.descricao.substring(0,400) + ".." }}
-                                {{ desc.descricao }}
                             </p>
 
-                            <a class="btn-link" style="cursor:pointer;" @click.prevent="descricao();  ">Ler mais</a>
+                            <p  v-show="descricaosobre" style="text-align: justify;">
+                                {{ sobressegu.descricao }}
+
+                            </p>
+
+                            <a class="btn-link" style="cursor:pointer;" @click.prevent="descricaosobre=true; ">Ler mais</a>
 
                         </div>
 
@@ -144,13 +148,11 @@ export default {
     data() {
 
         return {
-           // vermais: 'Ser referência em gestão de negócios, com o uso de tecnologia e metodologias inovadoras em todos...',
-            // info_descricao: '   Level Soft - Tecnologias de Investigação e Desenvolvimento Ltd. é uma software house Angolana com técnicos e engenheiros reputados que implementam soluções tecnológicas, desenvolvendo plataformas web e conteúdos digitais para responder às necessidades específicas de cada cliente, comprometidos em melhorar a qualidade do ensino, superando desafios.',
-            // produtoprincipals: [],
+
             sobressegu: '',
             sobrestres:[],
-          //  selectedId:'',
-           desc:''
+            descricaosobre: false,
+
 
         }
     },
@@ -168,27 +170,7 @@ export default {
             })
     },
 
-    methods: {
-
-        descricao() {
-            axios.get('/sobressegu').then((response) => {
-                this.desc = response.data
-                console.log(this.sobressegu);
-            })
-        },
-
-
-/*         detalhe(idsobre) {
-
-            axios.get('/pegaid/'+ idsobre).then((response) => {
-                this.pegaid = response.data
-                //this.selectedId = idsobre
-                console.log(this.pegaid);
-            })
-
-        }, */
-
-    }
+    methods: {}
 }
 
 </script>

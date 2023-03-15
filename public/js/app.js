@@ -6019,6 +6019,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 //import moment from 'moment';
 
@@ -6554,17 +6557,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      // vermais: 'Ser referência em gestão de negócios, com o uso de tecnologia e metodologias inovadoras em todos...',
-      // info_descricao: '   Level Soft - Tecnologias de Investigação e Desenvolvimento Ltd. é uma software house Angolana com técnicos e engenheiros reputados que implementam soluções tecnológicas, desenvolvendo plataformas web e conteúdos digitais para responder às necessidades específicas de cada cliente, comprometidos em melhorar a qualidade do ensino, superando desafios.',
-      // produtoprincipals: [],
       sobressegu: '',
       sobrestres: [],
-      //  selectedId:'',
-      desc: ''
+      descricaosobre: false
     };
   },
   mounted: function mounted() {
@@ -6577,24 +6580,7 @@ __webpack_require__.r(__webpack_exports__);
       console.log(_this.sobressegu);
     });
   },
-  methods: {
-    descricao: function descricao() {
-      var _this2 = this;
-      axios.get('/sobressegu').then(function (response) {
-        _this2.desc = response.data;
-        console.log(_this2.sobressegu);
-      });
-    }
-    /*         detalhe(idsobre) {
-    
-                axios.get('/pegaid/'+ idsobre).then((response) => {
-                    this.pegaid = response.data
-                    //this.selectedId = idsobre
-                    console.log(this.pegaid);
-                })
-    
-            }, */
-  }
+  methods: {}
 });
 
 /***/ }),
@@ -31996,28 +31982,14 @@ var render = function () {
                   _vm._v(" "),
                   _c("p", { staticStyle: { "text-align": "justify" } }, [
                     _vm._v(
-                      "\n                            " +
+                      "\n                                " +
                         _vm._s(_vm.infopro.descricao) +
-                        "\n                        "
+                        "\n                            "
                     ),
                   ]),
                   _vm._v(" "),
                   _vm.infopro.nome == "Level School"
-                    ? _c("div", [
-                        _vm._m(0),
-                        _vm._v(" "),
-                        _vm._m(1),
-                        _vm._v(" "),
-                        _vm._m(2),
-                        _vm._v(" "),
-                        _vm._m(3),
-                        _vm._v(" "),
-                        _vm._m(4),
-                        _vm._v(" "),
-                        _vm._m(5),
-                        _vm._v(" "),
-                        _vm._m(6),
-                      ])
+                    ? _c("div", [_vm._m(0)])
                     : _c("div"),
                 ]
               ),
@@ -32039,7 +32011,7 @@ var render = function () {
       },
       [
         _c("div", { staticClass: "container" }, [
-          _vm._m(7),
+          _vm._m(1),
           _vm._v(" "),
           _c(
             "div",
@@ -32116,9 +32088,9 @@ var render = function () {
                             segerido.descricao.length < 100
                               ? _c("p", { staticClass: "position" }, [
                                   _vm._v(
-                                    "\n                                " +
+                                    "\n                                    " +
                                       _vm._s(segerido.nome_dois) +
-                                      "\n                            "
+                                      "\n                                "
                                   ),
                                 ])
                               : _c("p", { staticClass: "position" }, [
@@ -32152,113 +32124,20 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "h5",
-      {
-        staticClass: "pb-3",
-        staticStyle: { "border-bottom": "2px solid #ebebeb" },
-      },
-      [
-        _c("i", { staticClass: "far fa-arrow-alt-circle-right" }),
-        _vm._v(" Visão estratégica de gestão académica"),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "h5",
-      {
-        staticClass: "pb-3",
-        staticStyle: { "border-bottom": "2px solid #ebebeb" },
-      },
-      [
-        _c("i", { staticClass: "far fa-arrow-alt-circle-right" }),
-        _vm._v(" Processos académicos optimizados"),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "h5",
-      {
-        staticClass: "pb-3",
-        staticStyle: { "border-bottom": "2px solid #ebebeb" },
-      },
-      [
-        _c("i", { staticClass: "far fa-arrow-alt-circle-right" }),
-        _vm._v(" Segurança de dados"),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "h5",
-      {
-        staticClass: "pb-3",
-        staticStyle: { "border-bottom": "2px solid #ebebeb" },
-      },
-      [
-        _c("i", { staticClass: "far fa-arrow-alt-circle-right" }),
-        _vm._v(" Suporte humanizado"),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "h5",
-      {
-        staticClass: "pb-3",
-        staticStyle: { "border-bottom": "2px solid #ebebeb" },
-      },
-      [
-        _c("i", { staticClass: "far fa-arrow-alt-circle-right" }),
-        _vm._v(" Facturas"),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "h5",
-      {
-        staticClass: "pb-3",
-        staticStyle: { "border-bottom": "2px solid #ebebeb" },
-      },
-      [
-        _c("i", { staticClass: "far fa-arrow-alt-circle-right" }),
-        _vm._v(" Aprimoramento na captação de alunos"),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "h5",
-      {
-        staticClass: "pb-3",
-        staticStyle: { "border-bottom": "2px solid #ebebeb" },
-      },
-      [
-        _c("i", { staticClass: "far fa-arrow-alt-circle-right" }),
-        _vm._v(" Comunicação assertiva com pais e estudantes"),
-      ]
-    )
+    return _c("div", { staticClass: "features-item mb-30" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v(" Level-Invoicing ")]),
+        _vm._v(" "),
+        _c("p"),
+        _c("p", [
+          _vm._v(
+            "\n                                    ola como vais\n                                "
+          ),
+        ]),
+        _vm._v(" "),
+        _c("p"),
+      ]),
+    ])
   },
   function () {
     var _vm = this
@@ -32807,19 +32686,51 @@ var render = function () {
             _c("div", { staticClass: "text-wrapper mb-50 wow fadeInRight" }, [
               _vm._m(1),
               _vm._v(" "),
-              _vm.sobressegu.descricao.length > 100
-                ? _c("p", { staticStyle: { "text-align": "justify" } }, [
-                    _vm._v(
-                      "\n                            " +
-                        _vm._s(
-                          _vm.sobressegu.descricao.substring(0, 400) + ".."
-                        ) +
-                        "\n                            " +
-                        _vm._s(_vm.desc.descricao) +
-                        "\n                        "
-                    ),
-                  ])
-                : _vm._e(),
+              _c(
+                "p",
+                {
+                  directives: [
+                    {
+                      name: "show",
+                      rawName: "v-show",
+                      value: !_vm.descricaosobre,
+                      expression: "!descricaosobre",
+                    },
+                  ],
+                  staticStyle: { "text-align": "justify" },
+                },
+                [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(
+                        _vm.sobressegu.descricao.substring(0, 400) + ".."
+                      ) +
+                      "\n                        "
+                  ),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "p",
+                {
+                  directives: [
+                    {
+                      name: "show",
+                      rawName: "v-show",
+                      value: _vm.descricaosobre,
+                      expression: "descricaosobre",
+                    },
+                  ],
+                  staticStyle: { "text-align": "justify" },
+                },
+                [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(_vm.sobressegu.descricao) +
+                      "\n\n                        "
+                  ),
+                ]
+              ),
               _vm._v(" "),
               _c(
                 "a",
@@ -32829,7 +32740,7 @@ var render = function () {
                   on: {
                     click: function ($event) {
                       $event.preventDefault()
-                      return _vm.descricao()
+                      _vm.descricaosobre = true
                     },
                   },
                 },

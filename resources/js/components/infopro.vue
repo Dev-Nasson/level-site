@@ -47,15 +47,18 @@
 
                              <div v-if="infopro.nome=='Level School'">
 
+                                <div class="features-item mb-30"><div class="text"><h4> Level-Invoicing </h4> <p></p><p>
+                                    ola como vais
+                                </p> <p></p></div></div>
+<!--
                             <h5 class="pb-3" style="border-bottom: 2px solid #ebebeb;"> <i class="far fa-arrow-alt-circle-right"> </i> Visão estratégica de gestão académica</h5>
-
                             <h5 class="pb-3" style="border-bottom: 2px solid #ebebeb;"> <i class="far fa-arrow-alt-circle-right"> </i> Processos académicos optimizados</h5>
                             <h5 class="pb-3" style="border-bottom: 2px solid #ebebeb;"> <i class="far fa-arrow-alt-circle-right"> </i> Segurança de dados</h5>
                             <h5 class="pb-3" style="border-bottom: 2px solid #ebebeb;"> <i class="far fa-arrow-alt-circle-right"> </i> Suporte humanizado</h5>
                             <h5 class="pb-3" style="border-bottom: 2px solid #ebebeb;"> <i class="far fa-arrow-alt-circle-right"> </i> Facturas</h5>
                             <h5 class="pb-3" style="border-bottom: 2px solid #ebebeb;"> <i class="far fa-arrow-alt-circle-right"> </i> Aprimoramento na captação de alunos</h5>
                             <h5 class="pb-3" style="border-bottom: 2px solid #ebebeb;"> <i class="far fa-arrow-alt-circle-right"> </i> Comunicação assertiva com pais e estudantes</h5>
-
+ -->
                              </div>
 
                              <div v-else>

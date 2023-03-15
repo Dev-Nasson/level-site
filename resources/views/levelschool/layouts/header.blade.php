@@ -25,7 +25,6 @@
 
         <div id="app">
 
-
         <!--====== Start Preloader ======-->
         <div class="preloader">
             <div class="loader">

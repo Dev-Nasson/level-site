@@ -1,7 +1,9 @@
 <template>
     <div>
-    
-     Diário da republica está aqui agora 
+
+
+
+
 
         <!--====== Start Page-banner section ======-->
         <section class="page-banner bg_cover position-relative z-1">

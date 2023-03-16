@@ -6947,6 +6947,192 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 //import moment from 'moment';
 
@@ -36833,22 +37019,90 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _vm.infopro.nome == "Level School"
-                    ? _c("div", [
-                        _vm._m(0),
-                        _vm._v(" "),
-                        _vm._m(1),
-                        _vm._v(" "),
-                        _vm._m(2),
-                        _vm._v(" "),
-                        _vm._m(3),
-                        _vm._v(" "),
-                        _vm._m(4),
-                        _vm._v(" "),
-                        _vm._m(5),
-                        _vm._v(" "),
-                        _vm._m(6),
-                      ])
-                    : _c("div"),
+                    ? _c(
+                        "div",
+                        {
+                          staticClass: "features-area ml-6",
+                          attrs: { keys: "0" },
+                        },
+                        [
+                          _vm._m(0),
+                          _vm._v(" "),
+                          _vm._m(1),
+                          _vm._v(" "),
+                          _vm._m(2),
+                          _vm._v(" "),
+                          _vm._m(3),
+                          _vm._v(" "),
+                          _vm._m(4),
+                          _vm._v(" "),
+                          _vm._m(5),
+                          _vm._v(" "),
+                          _vm._m(6),
+                        ]
+                      )
+                    : _vm.infopro.nome == "Level-Learning"
+                    ? _c(
+                        "div",
+                        {
+                          staticClass: "features-area ml-6",
+                          attrs: { keys: "0" },
+                        },
+                        [
+                          _vm._m(7),
+                          _vm._v(" "),
+                          _vm._m(8),
+                          _vm._v(" "),
+                          _vm._m(9),
+                          _vm._v(" "),
+                          _vm._m(10),
+                          _vm._v(" "),
+                          _vm._m(11),
+                          _vm._v(" "),
+                          _vm._m(12),
+                          _vm._v(" "),
+                          _vm._m(13),
+                        ]
+                      )
+                    : _vm.infopro.nome == "Level-People"
+                    ? _c(
+                        "div",
+                        {
+                          staticClass: "features-area ml-6",
+                          attrs: { keys: "0" },
+                        },
+                        [
+                          _vm._m(14),
+                          _vm._v(" "),
+                          _vm._m(15),
+                          _vm._v(" "),
+                          _vm._m(16),
+                          _vm._v(" "),
+                          _vm._m(17),
+                          _vm._v(" "),
+                          _vm._m(18),
+                          _vm._v(" "),
+                          _vm._m(19),
+                          _vm._v(" "),
+                          _vm._m(20),
+                          _vm._v(" "),
+                          _vm._m(21),
+                          _vm._v(" "),
+                          _vm._m(22),
+                          _vm._v(" "),
+                          _vm._m(23),
+                          _vm._v(" "),
+                          _vm._m(24),
+                          _vm._v(" "),
+                          _vm._m(25),
+                          _vm._v(" "),
+                          _vm._m(26),
+                        ]
+                      )
+                    : _c("div", {
+                        staticClass: "features-area ml-6",
+                        attrs: { keys: "0" },
+                      }),
                 ]
               ),
             ]),
@@ -36861,7 +37115,7 @@ var render = function () {
     _vm._v(" "),
     _c("section", { staticClass: "team-area team-area-v2 pt-30 pb-70" }, [
       _c("div", { staticClass: "container" }, [
-        _vm._m(7),
+        _vm._m(27),
         _vm._v(" "),
         _c(
           "div",
@@ -36937,9 +37191,9 @@ var render = function () {
                           segerido.descricao.length < 100
                             ? _c("p", { staticClass: "position" }, [
                                 _vm._v(
-                                  "\n                                " +
+                                  "\n                                    " +
                                     _vm._s(segerido.nome_dois) +
-                                    "\n                            "
+                                    "\n                                "
                                 ),
                               ])
                             : _c("p", { staticClass: "position" }, [
@@ -36971,113 +37225,315 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "h5",
-      {
-        staticClass: "pb-3",
-        staticStyle: { "border-bottom": "2px solid #ebebeb" },
-      },
-      [
-        _c("i", { staticClass: "far fa-arrow-alt-circle-right" }),
-        _vm._v(" Visão estratégica de gestão académica"),
-      ]
-    )
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Visão estratégica de gestão académica ")]),
+      ]),
+    ])
   },
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "h5",
-      {
-        staticClass: "pb-3",
-        staticStyle: { "border-bottom": "2px solid #ebebeb" },
-      },
-      [
-        _c("i", { staticClass: "far fa-arrow-alt-circle-right" }),
-        _vm._v(" Processos académicos optimizados"),
-      ]
-    )
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Processos académicos optimizados ")]),
+      ]),
+    ])
   },
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "h5",
-      {
-        staticClass: "pb-3",
-        staticStyle: { "border-bottom": "2px solid #ebebeb" },
-      },
-      [
-        _c("i", { staticClass: "far fa-arrow-alt-circle-right" }),
-        _vm._v(" Segurança de dados"),
-      ]
-    )
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Segurança de dados ")]),
+      ]),
+    ])
   },
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "h5",
-      {
-        staticClass: "pb-3",
-        staticStyle: { "border-bottom": "2px solid #ebebeb" },
-      },
-      [
-        _c("i", { staticClass: "far fa-arrow-alt-circle-right" }),
-        _vm._v(" Suporte humanizado"),
-      ]
-    )
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v(" Suporte humanizado")]),
+      ]),
+    ])
   },
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "h5",
-      {
-        staticClass: "pb-3",
-        staticStyle: { "border-bottom": "2px solid #ebebeb" },
-      },
-      [
-        _c("i", { staticClass: "far fa-arrow-alt-circle-right" }),
-        _vm._v(" Facturas"),
-      ]
-    )
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [_c("h4", [_vm._v("Facturas ")])]),
+    ])
   },
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "h5",
-      {
-        staticClass: "pb-3",
-        staticStyle: { "border-bottom": "2px solid #ebebeb" },
-      },
-      [
-        _c("i", { staticClass: "far fa-arrow-alt-circle-right" }),
-        _vm._v(" Aprimoramento na captação de alunos"),
-      ]
-    )
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Aprimoramento na captação de alunos ")]),
+      ]),
+    ])
   },
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "h5",
-      {
-        staticClass: "pb-3",
-        staticStyle: { "border-bottom": "2px solid #ebebeb" },
-      },
-      [
-        _c("i", { staticClass: "far fa-arrow-alt-circle-right" }),
-        _vm._v(" Comunicação assertiva com pais e estudantes"),
-      ]
-    )
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Comunicação assertiva com pais e estudantes ")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Catálogo de Cursos e Disciplinas ")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "Oferece seus conteúdos em um catálogo de cursos online que podem ser\n                                        filtrados\n                                        por categoria ou tema."
+          ),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Inscrições e Matriculas ")]),
+        _vm._v(" "),
+        _c("p", [_vm._v("Possiblita a inscrição em cursos e matriculas.")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Player de Aulas e Conteúdos ")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "Disponibiliza conteúdos de maneira mais interativa e em qualquer formato\n                                        com\n                                        recursos de vídeo, PDF e muito mais."
+          ),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Textos Recomendados ")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "Recomenda conteúdos de acordo com as preferências de cada aluno."
+          ),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Certificados ")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "Emita certificados automaticamente para a conclusão de cada curso ou\n                                        treinamento.\n                                    "
+          ),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Questões e Avaliações ")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "Aplica avaliações com questões e alternativas em um ambiente controlado e\n                                        seguro\n                                        contra as colas​."
+          ),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Mural da Turma ")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            " Assume-se como uma rede social de aprendizagem usando nosso sistema de\n                                        fórum,\n                                        tópicos e mural da turma."
+          ),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [
+          _vm._v(
+            "Registo de Funcionários e arquivo de coumentos obrigatorios "
+          ),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Registo de Docentes ")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Gestao de Assuduídade")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [
+          _vm._v(
+            "Gestão de dados académicos de docentes. Listagens, cargos académicos,\n                                        registos\n                                        de obras publicadas, Niveis académicos"
+          ),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Gestão Individual de progressão e carreira")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Folhas salariais")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Mapas de Pagamento Bancário")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [_c("h4", [_vm._v("Recibos")])]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Gestão de contencioso")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [
+          _vm._v("Contratos/Alertas prazos e arquivo digital do contrato"),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Mapas para remessa automática Segurança Social")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Mapas para remessa automática à AGT")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "features-item" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h4", [_vm._v("Modelo 2 para remessa à AGT")]),
+      ]),
+    ])
   },
   function () {
     var _vm = this

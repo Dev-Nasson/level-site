@@ -91,7 +91,7 @@
                     <div class="col-lg-6">
                         <div class="text-wrapper mb-50 wow fadeInRight">
                             <div class="section-title mb-15">
-                                <span class="sub-title st-one">Quem somos Olá </span>
+                                <span class="sub-title st-one">Quem somos</span>
                                 <h2>
                                     {{ inicios.titulo }}
                                 </h2>

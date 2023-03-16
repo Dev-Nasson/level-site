@@ -2,9 +2,6 @@
     <div>
 
 
-
-Ola como vai o seu dia 
-
         <!--====== Start Page-banner section ======-->
         <section class="page-banner bg_cover position-relative z-1">
             <div class="shape shape-one scene"><span data-depth="1"><img src="assets/images/shape/shape-1.png"
@@ -87,8 +84,6 @@ Ola como vai o seu dia
             </div>
         </section><!--====== End About section ======-->
 
-
-
         <section class="service-area pt-50 pb-80 " style="background-color:#fbfbfb;">
             <div class="container">
                 <div class="row justify-content-center">
@@ -140,7 +135,6 @@ Ola como vai o seu dia
             </div>
         </section>
 
-
     </div>
 </template>
 
@@ -152,12 +146,9 @@ export default {
     data() {
 
         return {
-
             sobressegu: '',
             sobrestres:[],
             descricaosobre: false,
-
-
         }
     },
 

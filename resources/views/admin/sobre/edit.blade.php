@@ -92,7 +92,7 @@
 
                                         <div class="col-md-5">
                                             <input type="text" data-required="1" name="icone"
-                                                placeholder="Insira o ícone" class="form-control input-height" />
+                                                placeholder="Insira o ícone"  value="{{$sobre->icone}} " class="form-control input-height" />
                                         </div>
                                     </div>
 

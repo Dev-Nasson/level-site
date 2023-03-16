@@ -75,8 +75,10 @@
                                 </div>
 
 
+                            
 
                             </VueSlickCarousel>
+                           
 
 
                             <div class="shape shape-one">
@@ -89,7 +91,7 @@
                     <div class="col-lg-6">
                         <div class="text-wrapper mb-50 wow fadeInRight">
                             <div class="section-title mb-15">
-                                <span class="sub-title st-one">Quem somos</span>
+                                <span class="sub-title st-one">Quem somos Olá </span>
                                 <h2>
                                     {{ inicios.titulo }}
                                 </h2>
@@ -98,6 +100,7 @@
                             <p>
                                 {{ inicios.descricao }}
                             </p>
+                           
 
 
                         </div>

@@ -5767,6 +5767,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 
@@ -35165,7 +35168,7 @@ var render = function () {
               _c("div", { staticClass: "text-wrapper mb-50 wow fadeInRight" }, [
                 _c("div", { staticClass: "section-title mb-15" }, [
                   _c("span", { staticClass: "sub-title st-one" }, [
-                    _vm._v("Quem somos"),
+                    _vm._v("Quem somos Olá "),
                   ]),
                   _vm._v(" "),
                   _c("h2", [

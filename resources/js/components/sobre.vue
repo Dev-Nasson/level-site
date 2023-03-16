@@ -45,7 +45,7 @@
 
 
                         <div class="img-holder mb-50 wow fadeInLeft" style="border:1px solid #ebebeb;" v-if="sobressegu.imagem_padrao == null || sobressegu.imagem_padrao == ''">
-                            <img src="assets/images/about/sobre.png" alt="">
+                            <!-- <img src="assets/images/about/sobre.png" alt=""> -->
                         </div>
 
                         <div class="img-holder mb-50 wow fadeInLeft" style="border:1px solid #ebebeb;" v-else>

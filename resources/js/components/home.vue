@@ -17,7 +17,7 @@
 
                                     <div class="img-holder wow fadeInLeft"
                                         v-if="inicios.imagem_padrao == null || inicios.imagem_padrao == ''">
-                                        <img src="/assets/images/about/about-1.jpg" alt="Image">
+                                        <!-- <img src="/assets/images/about/about-1.jpg" alt="Image"> -->
 
                                     </div>
 
@@ -33,7 +33,7 @@
 
                                     <div class="img-holder wow fadeInLeft"
                                         v-if="inicios.imagem_padrao == null || inicios.imagem_padrao == ''">
-                                        <img src="/assets/images/about/about-1.jpg" alt="Image">
+                                        <!-- <img src="/assets/images/about/about-1.jpg" alt="Image"> -->
 
                                     </div>
 
@@ -48,7 +48,7 @@
 
                                     <div class="img-holder wow fadeInLeft"
                                         v-if="inicios.imagem_padrao == null || inicios.imagem_padrao == ''">
-                                        <img src="/assets/images/about/about-1.jpg" alt="Image">
+                                        <!-- <img src="/assets/images/about/about-1.jpg" alt="Image"> -->
 
                                     </div>
 
@@ -63,7 +63,7 @@
 
                                     <div class="img-holder wow fadeInLeft"
                                         v-if="inicios.imagem_padrao == null || inicios.imagem_padrao == ''">
-                                        <img src="/assets/images/about/about-1.jpg" alt="Image">
+                                        <!-- <img src="/assets/images/about/about-1.jpg" alt="Image"> -->
 
                                     </div>
 

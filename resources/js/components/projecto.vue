@@ -28,7 +28,7 @@
 
                         <div class="page-banner-img"
                             v-if="priprojecto.imagem_padrao == null || priprojecto.imagem_padrao == ''">
-                            <img src="assets/images/breadcrumb/img-2.jpg" alt="">
+                            <!-- <img src="assets/images/breadcrumb/img-2.jpg" alt=""> -->
                         </div>
 
                         <div class="page-banner-img" v-else>

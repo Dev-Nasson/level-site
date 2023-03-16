@@ -30,7 +30,7 @@
                     <div class="col-lg-6">
 
                         <div class="page-banner-img" v-if="sedois.imagem_padrao == null || sedois.imagem_padrao == ''">
-                            <img src="/assets/images/breadcrumb/img-3.jpg" alt="">
+                            <!-- <img src="/assets/images/breadcrumb/img-3.jpg" alt=""> -->
                         </div>
 
 

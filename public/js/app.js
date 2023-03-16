@@ -35068,18 +35068,9 @@ var render = function () {
                       _c("div", [
                         _vm.inicios.imagem_padrao == null ||
                         _vm.inicios.imagem_padrao == ""
-                          ? _c(
-                              "div",
-                              { staticClass: "img-holder wow fadeInLeft" },
-                              [
-                                _c("img", {
-                                  attrs: {
-                                    src: "/assets/images/about/about-1.jpg",
-                                    alt: "Image",
-                                  },
-                                }),
-                              ]
-                            )
+                          ? _c("div", {
+                              staticClass: "img-holder wow fadeInLeft",
+                            })
                           : _c(
                               "div",
                               { staticClass: "img-holder wow fadeInLeft" },
@@ -35099,18 +35090,9 @@ var render = function () {
                       _c("div", [
                         _vm.inicios.imagem_padrao == null ||
                         _vm.inicios.imagem_padrao == ""
-                          ? _c(
-                              "div",
-                              { staticClass: "img-holder wow fadeInLeft" },
-                              [
-                                _c("img", {
-                                  attrs: {
-                                    src: "/assets/images/about/about-1.jpg",
-                                    alt: "Image",
-                                  },
-                                }),
-                              ]
-                            )
+                          ? _c("div", {
+                              staticClass: "img-holder wow fadeInLeft",
+                            })
                           : _c(
                               "div",
                               { staticClass: "img-holder wow fadeInLeft" },
@@ -35130,18 +35112,9 @@ var render = function () {
                       _c("div", [
                         _vm.inicios.imagem_padrao == null ||
                         _vm.inicios.imagem_padrao == ""
-                          ? _c(
-                              "div",
-                              { staticClass: "img-holder wow fadeInLeft" },
-                              [
-                                _c("img", {
-                                  attrs: {
-                                    src: "/assets/images/about/about-1.jpg",
-                                    alt: "Image",
-                                  },
-                                }),
-                              ]
-                            )
+                          ? _c("div", {
+                              staticClass: "img-holder wow fadeInLeft",
+                            })
                           : _c(
                               "div",
                               { staticClass: "img-holder wow fadeInLeft" },
@@ -35161,18 +35134,9 @@ var render = function () {
                       _c("div", [
                         _vm.inicios.imagem_padrao == null ||
                         _vm.inicios.imagem_padrao == ""
-                          ? _c(
-                              "div",
-                              { staticClass: "img-holder wow fadeInLeft" },
-                              [
-                                _c("img", {
-                                  attrs: {
-                                    src: "/assets/images/about/about-1.jpg",
-                                    alt: "Image",
-                                  },
-                                }),
-                              ]
-                            )
+                          ? _c("div", {
+                              staticClass: "img-holder wow fadeInLeft",
+                            })
                           : _c(
                               "div",
                               { staticClass: "img-holder wow fadeInLeft" },
@@ -35528,21 +35492,10 @@ var render = function () {
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-lg-6" }, [
               _vm.infopro.imagem_dois == null || _vm.infopro.imagem_dois == ""
-                ? _c(
-                    "div",
-                    {
-                      staticClass: "img-holder mb-50 wow fadeInLeft",
-                      attrs: { "data-wow-delay": ".2s" },
-                    },
-                    [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/images/about/img-5.png",
-                          alt: "",
-                        },
-                      }),
-                    ]
-                  )
+                ? _c("div", {
+                    staticClass: "img-holder mb-50 wow fadeInLeft",
+                    attrs: { "data-wow-delay": ".2s" },
+                  })
                 : _c(
                     "div",
                     {
@@ -35720,21 +35673,10 @@ var render = function () {
                         [
                           segerido.imagem_padrao == null ||
                           segerido.imagem_padrao == ""
-                            ? _c(
-                                "div",
-                                {
-                                  staticClass: "img-holder",
-                                  attrs: { "data-wow-delay": ".2s" },
-                                },
-                                [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "/assets/images/team/img-1.jpg",
-                                      alt: "",
-                                    },
-                                  }),
-                                ]
-                              )
+                            ? _c("div", {
+                                staticClass: "img-holder",
+                                attrs: { "data-wow-delay": ".2s" },
+                              })
                             : _c(
                                 "div",
                                 {
@@ -36172,14 +36114,7 @@ var render = function () {
             _vm._v(" "),
             _c("div", { staticClass: "col-lg-6" }, [
               _vm.sedois.imagem_padrao == null || _vm.sedois.imagem_padrao == ""
-                ? _c("div", { staticClass: "page-banner-img" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/assets/images/breadcrumb/img-3.jpg",
-                        alt: "",
-                      },
-                    }),
-                  ])
+                ? _c("div", { staticClass: "page-banner-img" })
                 : _c("div", { staticClass: "page-banner-img" }, [
                     _c("img", {
                       attrs: {
@@ -36453,14 +36388,7 @@ var render = function () {
             _c("div", { staticClass: "col-lg-6" }, [
               _vm.priprojecto.imagem_padrao == null ||
               _vm.priprojecto.imagem_padrao == ""
-                ? _c("div", { staticClass: "page-banner-img" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "assets/images/breadcrumb/img-2.jpg",
-                        alt: "",
-                      },
-                    }),
-                  ])
+                ? _c("div", { staticClass: "page-banner-img" })
                 : _c("div", { staticClass: "page-banner-img" }, [
                     _c("img", {
                       attrs: {
@@ -36622,18 +36550,10 @@ var render = function () {
           _c("div", { staticClass: "col-lg-6" }, [
             _vm.sobressegu.imagem_padrao == null ||
             _vm.sobressegu.imagem_padrao == ""
-              ? _c(
-                  "div",
-                  {
-                    staticClass: "img-holder mb-50 wow fadeInLeft",
-                    staticStyle: { border: "1px solid #ebebeb" },
-                  },
-                  [
-                    _c("img", {
-                      attrs: { src: "assets/images/about/sobre.png", alt: "" },
-                    }),
-                  ]
-                )
+              ? _c("div", {
+                  staticClass: "img-holder mb-50 wow fadeInLeft",
+                  staticStyle: { border: "1px solid #ebebeb" },
+                })
               : _c(
                   "div",
                   {
@@ -36966,21 +36886,10 @@ var render = function () {
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-lg-6" }, [
               _vm.infopro.imagem_dois == null || _vm.infopro.imagem_dois == ""
-                ? _c(
-                    "div",
-                    {
-                      staticClass: "img-holder mb-50 wow fadeInLeft",
-                      attrs: { "data-wow-delay": ".2s" },
-                    },
-                    [
-                      _c("img", {
-                        attrs: {
-                          src: "/assets/images/about/img-5.png",
-                          alt: "",
-                        },
-                      }),
-                    ]
-                  )
+                ? _c("div", {
+                    staticClass: "img-holder mb-50 wow fadeInLeft",
+                    attrs: { "data-wow-delay": ".2s" },
+                  })
                 : _c(
                     "div",
                     {

@@ -15,7 +15,7 @@
 
                         <div class="img-holder mb-50 wow fadeInLeft" data-wow-delay=".2s"
                             v-if="infopro.imagem_dois == null || infopro.imagem_dois == ''">
-                            <img src="/assets/images/about/img-5.png" alt="">
+                            <!-- <img src="/assets/images/about/img-5.png" alt=""> -->
                         </div>
 
 

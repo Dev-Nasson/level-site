@@ -92,7 +92,6 @@
 
                             </div>
 
-
                             <div keys="0" class="features-area ml-6" v-else-if="infopro.nome == 'Level-Learning'">
 
                                 <div class="features-item ">
@@ -152,7 +151,6 @@
                                 </div>
 
                             </div>
-
 
                             <div keys="0" class="features-area ml-6" v-else-if="infopro.nome == 'Level-People'">
 
@@ -239,9 +237,7 @@
 
                             </div>
 
-
                             <div keys="0" class="features-area ml-6" v-else>
-
                             </div>
 
 

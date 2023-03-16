@@ -6222,6 +6222,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 //import moment from 'moment';
 
@@ -12765,7 +12768,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.features-item {\n   border-bottom: 1px solid #ccc;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.features-item {\n    border-bottom: 1px solid #ccc;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -35406,9 +35409,7 @@ var render = function () {
                           _vm._m(6),
                         ]
                       )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.infopro.nome == "Level-Learning"
+                    : _vm.infopro.nome == "Level-Learning"
                     ? _c(
                         "div",
                         {
@@ -35431,9 +35432,7 @@ var render = function () {
                           _vm._m(13),
                         ]
                       )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.infopro.nome == "Level-People"
+                    : _vm.infopro.nome == "Level-People"
                     ? _c(
                         "div",
                         {
@@ -35679,7 +35678,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("p", [
           _vm._v(
-            "Oferece seus conteúdos em um catálogo de cursos online que podem ser filtrados por categoria ou tema."
+            "Oferece seus conteúdos em um catálogo de cursos online que podem ser filtrados\n                                        por categoria ou tema."
           ),
         ]),
       ]),
@@ -35707,7 +35706,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("p", [
           _vm._v(
-            "Disponibiliza conteúdos de maneira mais interativa e em qualquer formato com recursos de vídeo, PDF e muito mais."
+            "Disponibiliza conteúdos de maneira mais interativa e em qualquer formato com\n                                        recursos de vídeo, PDF e muito mais."
           ),
         ]),
       ]),
@@ -35719,7 +35718,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "features-item" }, [
       _c("div", { staticClass: "text" }, [
-        _c("h4", [_vm._v("Textos  Recomendados ")]),
+        _c("h4", [_vm._v("Textos Recomendados ")]),
         _vm._v(" "),
         _c("p", [
           _vm._v(
@@ -35739,7 +35738,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("p", [
           _vm._v(
-            "Emita certificados automaticamente para a conclusão de cada curso ou treinamento."
+            "Emita certificados automaticamente para a conclusão de cada curso ou treinamento.\n                                    "
           ),
         ]),
       ]),
@@ -35755,7 +35754,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("p", [
           _vm._v(
-            "Aplica avaliações com questões e alternativas em um ambiente controlado e seguro contra as colas​."
+            "Aplica avaliações com questões e alternativas em um ambiente controlado e seguro\n                                        contra as colas​."
           ),
         ]),
       ]),
@@ -35771,7 +35770,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("p", [
           _vm._v(
-            " Assume-se como uma rede social de aprendizagem usando nosso sistema de fórum, tópicos e mural da turma."
+            " Assume-se como uma rede social de aprendizagem usando nosso sistema de fórum,\n                                        tópicos e mural da turma."
           ),
         ]),
       ]),
@@ -35819,7 +35818,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "text" }, [
         _c("h4", [
           _vm._v(
-            "Gestão de dados académicos de docentes. Listagens, cargos académicos, registos de obras publicadas, Niveis académicos"
+            "Gestão de dados académicos de docentes. Listagens, cargos académicos, registos\n                                        de obras publicadas, Niveis académicos"
           ),
         ]),
       ]),

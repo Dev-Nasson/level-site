@@ -46,8 +46,7 @@
                             <!-- <a href="about.html" class="main-btn arrow-btn">Ler mais</a> -->
 
 
-
-                            <div keys="0" class="features-area ml-6"  v-if="infopro.nome == 'Level School'">
+                            <div keys="0" class="features-area ml-6" v-if="infopro.nome == 'Level School'">
 
                                 <div class="features-item ">
                                     <div class="text">
@@ -94,12 +93,13 @@
                             </div>
 
 
-                            <div keys="0" class="features-area ml-6" v-if="infopro.nome == 'Level-Learning'">
-                            
+                            <div keys="0" class="features-area ml-6" v-else-if="infopro.nome == 'Level-Learning'">
+
                                 <div class="features-item ">
                                     <div class="text">
                                         <h4>Catálogo de Cursos e Disciplinas </h4>
-                                        <p>Oferece seus conteúdos em um catálogo de cursos online que podem ser filtrados por categoria ou tema.</p>
+                                        <p>Oferece seus conteúdos em um catálogo de cursos online que podem ser filtrados
+                                            por categoria ou tema.</p>
                                     </div>
                                 </div>
 
@@ -110,18 +110,19 @@
                                     </div>
                                 </div>
 
-                                
+
                                 <div class="features-item ">
                                     <div class="text">
                                         <h4>Player de Aulas e Conteúdos </h4>
-                                        <p>Disponibiliza conteúdos de maneira mais interativa e em qualquer formato com recursos de vídeo, PDF e muito mais.</p>
+                                        <p>Disponibiliza conteúdos de maneira mais interativa e em qualquer formato com
+                                            recursos de vídeo, PDF e muito mais.</p>
                                     </div>
                                 </div>
 
-                                     
+
                                 <div class="features-item ">
                                     <div class="text">
-                                        <h4>Textos  Recomendados </h4>
+                                        <h4>Textos Recomendados </h4>
                                         <p>Recomenda conteúdos de acordo com as preferências de cada aluno.</p>
                                     </div>
                                 </div>
@@ -129,116 +130,118 @@
                                 <div class="features-item ">
                                     <div class="text">
                                         <h4>Certificados </h4>
-                                        <p>Emita certificados automaticamente para a conclusão de cada curso ou treinamento.</p>
+                                        <p>Emita certificados automaticamente para a conclusão de cada curso ou treinamento.
+                                        </p>
                                     </div>
                                 </div>
 
                                 <div class="features-item ">
                                     <div class="text">
                                         <h4>Questões e Avaliações </h4>
-                                        <p>Aplica avaliações com questões e alternativas em um ambiente controlado e seguro contra as colas​.</p>
+                                        <p>Aplica avaliações com questões e alternativas em um ambiente controlado e seguro
+                                            contra as colas​.</p>
                                     </div>
                                 </div>
 
                                 <div class="features-item ">
                                     <div class="text">
                                         <h4>Mural da Turma </h4>
-                                        <p> Assume-se como uma rede social de aprendizagem usando nosso sistema de fórum, tópicos e mural da turma.</p>
+                                        <p> Assume-se como uma rede social de aprendizagem usando nosso sistema de fórum,
+                                            tópicos e mural da turma.</p>
                                     </div>
                                 </div>
 
-                             </div>
-
-
-                             <div keys="0" class="features-area ml-6" v-if="infopro.nome == 'Level-People'">
-                            
-                            <div class="features-item ">
-                                <div class="text">
-                                    <h4>Registo de Funcionários e arquivo de coumentos obrigatorios </h4>
-                                </div>
                             </div>
 
 
-                            <div class="features-item ">
-                                <div class="text">
-                                    <h4>Registo de Docentes </h4>
+                            <div keys="0" class="features-area ml-6" v-else-if="infopro.nome == 'Level-People'">
+
+                                <div class="features-item ">
+                                    <div class="text">
+                                        <h4>Registo de Funcionários e arquivo de coumentos obrigatorios </h4>
+                                    </div>
                                 </div>
+
+
+                                <div class="features-item ">
+                                    <div class="text">
+                                        <h4>Registo de Docentes </h4>
+                                    </div>
+                                </div>
+
+                                <div class="features-item ">
+                                    <div class="text">
+                                        <h4>Gestao de Assuduídade</h4>
+                                    </div>
+                                </div>
+
+                                <div class="features-item ">
+                                    <div class="text">
+                                        <h4>Gestão de dados académicos de docentes. Listagens, cargos académicos, registos
+                                            de obras publicadas, Niveis académicos</h4>
+                                    </div>
+                                </div>
+
+                                <div class="features-item ">
+                                    <div class="text">
+                                        <h4>Gestão Individual de progressão e carreira</h4>
+                                    </div>
+                                </div>
+
+
+                                <div class="features-item ">
+                                    <div class="text">
+                                        <h4>Folhas salariais</h4>
+                                    </div>
+                                </div>
+
+                                <div class="features-item ">
+                                    <div class="text">
+                                        <h4>Mapas de Pagamento Bancário</h4>
+                                    </div>
+                                </div>
+
+                                <div class="features-item ">
+                                    <div class="text">
+                                        <h4>Recibos</h4>
+                                    </div>
+                                </div>
+
+                                <div class="features-item ">
+                                    <div class="text">
+                                        <h4>Gestão de contencioso</h4>
+                                    </div>
+                                </div>
+
+                                <div class="features-item ">
+                                    <div class="text">
+                                        <h4>Contratos/Alertas prazos e arquivo digital do contrato</h4>
+                                    </div>
+                                </div>
+
+                                <div class="features-item ">
+                                    <div class="text">
+                                        <h4>Mapas para remessa automática Segurança Social</h4>
+                                    </div>
+                                </div>
+
+                                <div class="features-item ">
+                                    <div class="text">
+                                        <h4>Mapas para remessa automática à AGT</h4>
+                                    </div>
+                                </div>
+
+                                <div class="features-item ">
+                                    <div class="text">
+                                        <h4>Modelo 2 para remessa à AGT</h4>
+                                    </div>
+                                </div>
+
                             </div>
 
-                            <div class="features-item ">
-                                <div class="text">
-                                    <h4>Gestao de Assuduídade</h4>
-                                </div>
-                            </div>
 
-                            <div class="features-item ">
-                                <div class="text">
-                                    <h4>Gestão de dados académicos de docentes. Listagens, cargos académicos, registos de obras publicadas, Niveis académicos</h4>
-                                </div>
-                            </div>
+                            <div keys="0" class="features-area ml-6" v-else>
 
-                            <div class="features-item ">
-                                <div class="text">
-                                    <h4>Gestão Individual de progressão e carreira</h4>
-                                </div>
-                            </div>
-
-                            
-                            <div class="features-item ">
-                                <div class="text">
-                                    <h4>Folhas salariais</h4>
-                                </div>
-                            </div>
-
-                            <div class="features-item ">
-                                <div class="text">
-                                    <h4>Mapas de Pagamento Bancário</h4>
-                                </div>
-                            </div>
-
-                            <div class="features-item ">
-                                <div class="text">
-                                    <h4>Recibos</h4>
-                                </div>
-                            </div>
-
-                            <div class="features-item ">
-                                <div class="text">
-                                    <h4>Gestão de contencioso</h4>
-                                </div>
-                            </div>
-                    
-                            <div class="features-item ">
-                                <div class="text">
-                                    <h4>Contratos/Alertas prazos e arquivo digital do contrato</h4>
-                                </div>
-                            </div>
-
-                            <div class="features-item ">
-                                <div class="text">
-                                    <h4>Mapas para remessa automática Segurança Social</h4>
-                                </div>
-                            </div>
-
-                            <div class="features-item ">
-                                <div class="text">
-                                    <h4>Mapas para remessa automática à AGT</h4>
-                                </div>
-                            </div>
-
-                            <div class="features-item ">
-                                <div class="text">
-                                    <h4>Modelo 2 para remessa à AGT</h4>
-                                </div>
-                            </div>
-
-                         </div>
-
-
-
-
-                            <div keys="0" class="features-area ml-6"  v-else>
-                            
                             </div>
 
 
@@ -409,9 +412,6 @@ export default {
 </script>
 
 <style>
-
 .features-item {
-   border-bottom: 1px solid #ccc; 
-}
-
-</style>
+    border-bottom: 1px solid #ccc;
+}</style>

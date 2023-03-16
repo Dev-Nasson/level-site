@@ -3,8 +3,6 @@
 <script src="{{ asset('js/app.js') }}"></script>
 
 
-
-
 <section class="contact-area contact-area-v1 pt-70 pb-90">
 
     <div class="container">
@@ -77,8 +75,6 @@
         </div>
     </div>
 </section>
-
-
 
 <!--====== Start Footer ======-->
 <footer class="footer-area">

@@ -28,9 +28,8 @@
                     <div class="col-lg-6">
 
                         <div class="page-banner-img" v-if="sobrepri.imagem_padrao == null || sobrepri.imagem_padrao == ''">
-                            <img src="assets/images/breadcrumb/img-1.jpg" alt="">
+                            <!-- <img src="assets/images/breadcrumb/img-1.jpg" alt=""> -->
                         </div>
-
 
                         <div class="page-banner-img" v-else>
                             <img :src="'levelschool/' + sobrepri.imagem_padrao" alt="Image">

@@ -6798,7 +6798,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -36613,14 +36612,7 @@ var render = function () {
             _c("div", { staticClass: "col-lg-6" }, [
               _vm.sobrepri.imagem_padrao == null ||
               _vm.sobrepri.imagem_padrao == ""
-                ? _c("div", { staticClass: "page-banner-img" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "assets/images/breadcrumb/img-1.jpg",
-                        alt: "",
-                      },
-                    }),
-                  ])
+                ? _c("div", { staticClass: "page-banner-img" })
                 : _c("div", { staticClass: "page-banner-img" }, [
                     _c("img", {
                       attrs: {

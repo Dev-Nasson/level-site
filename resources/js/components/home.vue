@@ -2,7 +2,6 @@
 <template>
     <div>
 
-        ola tudo fx
 
         <!--====== Start About Section ======-->
         <section class="about-area about-area-v1 position-relative pt-130">

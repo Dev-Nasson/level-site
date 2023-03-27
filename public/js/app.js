@@ -5770,6 +5770,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -6431,6 +6440,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -6761,18 +6772,50 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       sobressegu: '',
       sobrestres: [],
-      descricaosobre: false
+      descricaosobre: false,
+      sobrepri: ''
     };
   },
   mounted: function mounted() {
     var _this = this;
-    axios.get('/sobrestres').then(function (response) {
+    //sobrepri
+
+    axios.get('/sobrepri').then(function (response) {
+      _this.sobrepri = response.data;
+      console.log(_this.sobrepri);
+    }), axios.get('/sobrestres').then(function (response) {
       _this.sobrestres = response.data;
       console.log(_this.sobrestres);
     }), axios.get('/sobressegu').then(function (response) {
@@ -12989,7 +13032,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.portfolio-column {\n    padding: 10px;\n}\n.cor_port {\n    background: #fbfbfb;\n    padding: 10px;\n    border-bottom-left-radius: 7%;\n    border-bottom-right-radius: 7%;\n}\n.estilo-img {\n    border-top-left-radius: 7%;\n    border-top-right-radius: 7%;\n    border-top: 1px solid #ebebeb;\n    border-left: 1px solid #ebebeb;\n    border-right: 1px solid #ebebeb;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.portfolio-column {\n    padding: 10px;\n}\n.cor_port {\n    background: #fbfbfb;\n    padding: 10px;\n    border-bottom-left-radius: 7%;\n    border-bottom-right-radius: 7%;\n}\n.estilo-img {\n    border-top-left-radius: 7%;\n    border-top-right-radius: 7%;\n    border-top: 1px solid #ebebeb;\n    border-left: 1px solid #ebebeb;\n    border-right: 1px solid #ebebeb;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -35216,90 +35259,92 @@ var render = function () {
                   attrs: { keys: index },
                 },
                 [
-                  produtoinicio.imagem_um == null ||
-                  produtoinicio.imagem_um == ""
-                    ? _c("img", {
-                        staticClass: "card-img-top",
-                        attrs: {
-                          src: "/assets/images/portfolio/img-2.jpg",
-                          alt: "",
-                        },
-                      })
-                    : _c("img", {
-                        attrs: {
-                          src: "levelschool/" + produtoinicio.imagem_um,
-                          alt: "Image",
-                        },
-                      }),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card-body" }, [
-                    _c("h5", { staticClass: "card-title" }, [
-                      _vm._v(_vm._s(produtoinicio.nome)),
-                    ]),
-                    _vm._v(" "),
-                    produtoinicio.descricao.length < 100
-                      ? _c(
-                          "p",
-                          {
-                            staticClass: "card-text",
-                            staticStyle: {
-                              "font-size": "1.1rem",
-                              color: "#14171d",
-                            },
-                          },
-                          [
-                            _vm._v(
-                              "\n                                " +
-                                _vm._s(produtoinicio.nome_dois) +
-                                "\n                            "
-                            ),
-                          ]
-                        )
-                      : _c(
-                          "p",
-                          {
-                            staticClass: "card-text",
-                            staticStyle: {
-                              "font-size": "1.2rem",
-                              color: "#14171d",
-                            },
-                          },
-                          [
-                            _vm._v(
-                              "\n                                " +
-                                _vm._s(
-                                  produtoinicio.nome_dois.substring(0, 30) +
-                                    ".."
-                                ) +
-                                "\n\n                            "
-                            ),
-                          ]
-                        ),
-                  ]),
-                  _vm._v(" "),
                   _c(
-                    "div",
+                    "router-link",
                     {
-                      staticClass: "card-footer bg-white",
-                      staticStyle: { "border-top": "1px solid #39f" },
+                      staticClass: "",
+                      attrs: {
+                        to: {
+                          name: "infopro",
+                          params: { id: produtoinicio.id },
+                          hash: "#sectiontopo",
+                        },
+                      },
                     },
                     [
-                      _c(
-                        "small",
-                        { staticClass: "text-muted" },
-                        [
-                          _c(
-                            "router-link",
-                            {
-                              staticClass:
-                                "nav-link d-flex justify-content-center",
-                              attrs: {
-                                to: {
-                                  name: "infopro",
-                                  params: { id: produtoinicio.id },
-                                  hash: "#sectiontopo",
+                      produtoinicio.imagem_um == null ||
+                      produtoinicio.imagem_um == ""
+                        ? _c("img", {
+                            staticClass: "card-img-top",
+                            attrs: {
+                              src: "/assets/images/portfolio/img-2.jpg",
+                              alt: "",
+                            },
+                          })
+                        : _c("img", {
+                            attrs: {
+                              src: "levelschool/" + produtoinicio.imagem_um,
+                              alt: "Image",
+                            },
+                          }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "card-body" }, [
+                        _c("h5", { staticClass: "card-title" }, [
+                          _vm._v(_vm._s(produtoinicio.nome)),
+                        ]),
+                        _vm._v(" "),
+                        produtoinicio.descricao.length < 100
+                          ? _c(
+                              "p",
+                              {
+                                staticClass: "card-text",
+                                staticStyle: {
+                                  "font-size": "1.1rem",
+                                  color: "#14171d",
                                 },
                               },
+                              [
+                                _vm._v(
+                                  "\n                                    " +
+                                    _vm._s(produtoinicio.nome_dois) +
+                                    "\n                                "
+                                ),
+                              ]
+                            )
+                          : _c(
+                              "p",
+                              {
+                                staticClass: "card-text",
+                                staticStyle: {
+                                  "font-size": "1.2rem",
+                                  color: "#14171d",
+                                },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                    " +
+                                    _vm._s(
+                                      produtoinicio.nome_dois.substring(0, 30) +
+                                        ".."
+                                    ) +
+                                    "\n\n                                "
+                                ),
+                              ]
+                            ),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-footer bg-white",
+                          staticStyle: { "border-top": "1px solid #39f" },
+                        },
+                        [
+                          _c(
+                            "small",
+                            {
+                              staticClass:
+                                "text-muted d-flex justify-content-center",
                             },
                             [
                               _c(
@@ -35309,12 +35354,12 @@ var render = function () {
                               ),
                             ]
                           ),
-                        ],
-                        1
+                        ]
                       ),
                     ]
                   ),
-                ]
+                ],
+                1
               )
             }),
             0
@@ -36158,92 +36203,95 @@ var render = function () {
                     attrs: { keys: index },
                   },
                   [
-                    produtoprincipal.imagem_um == null ||
-                    produtoprincipal.imagem_um == ""
-                      ? _c("img", {
-                          staticClass: "card-img-top",
-                          attrs: {
-                            src: "/assets/images/portfolio/img-2.jpg",
-                            alt: "",
-                          },
-                        })
-                      : _c("img", {
-                          attrs: {
-                            src: "levelschool/" + produtoprincipal.imagem_um,
-                            alt: "Image",
-                          },
-                        }),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-body" }, [
-                      _c("h5", { staticClass: "card-title" }, [
-                        _vm._v(_vm._s(produtoprincipal.nome)),
-                      ]),
-                      _vm._v(" "),
-                      produtoprincipal.descricao.length < 100
-                        ? _c(
-                            "p",
-                            {
-                              staticClass: "card-text",
-                              staticStyle: {
-                                "font-size": "1.1rem",
-                                color: "#14171d",
-                              },
-                            },
-                            [
-                              _vm._v(
-                                "\n            " +
-                                  _vm._s(produtoprincipal.nome_dois) +
-                                  "\n        "
-                              ),
-                            ]
-                          )
-                        : _c(
-                            "p",
-                            {
-                              staticClass: "card-text",
-                              staticStyle: {
-                                "font-size": "1.2rem",
-                                color: "#14171d",
-                              },
-                            },
-                            [
-                              _vm._v(
-                                "\n            " +
-                                  _vm._s(
-                                    produtoprincipal.nome_dois.substring(
-                                      0,
-                                      30
-                                    ) + ".."
-                                  ) +
-                                  "\n                                               \n        "
-                              ),
-                            ]
-                          ),
-                    ]),
-                    _vm._v(" "),
                     _c(
-                      "div",
+                      "router-link",
                       {
-                        staticClass: "card-footer bg-white",
-                        staticStyle: { "border-top": "1px solid #39f" },
+                        staticClass: "",
+                        attrs: {
+                          to: {
+                            name: "infopro",
+                            params: { id: produtoprincipal.id },
+                            hash: "#sectiontopo",
+                          },
+                        },
                       },
                       [
-                        _c(
-                          "small",
-                          { staticClass: "text-muted" },
-                          [
-                            _c(
-                              "router-link",
-                              {
-                                staticClass:
-                                  "nav-link d-flex justify-content-center",
-                                attrs: {
-                                  to: {
-                                    name: "infopro",
-                                    params: { id: produtoprincipal.id },
-                                    hash: "#sectiontopo",
+                        produtoprincipal.imagem_um == null ||
+                        produtoprincipal.imagem_um == ""
+                          ? _c("img", {
+                              staticClass: "card-img-top",
+                              attrs: {
+                                src: "/assets/images/portfolio/img-2.jpg",
+                                alt: "",
+                              },
+                            })
+                          : _c("img", {
+                              attrs: {
+                                src:
+                                  "levelschool/" + produtoprincipal.imagem_um,
+                                alt: "Image",
+                              },
+                            }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "card-body" }, [
+                          _c("h5", { staticClass: "card-title" }, [
+                            _vm._v(_vm._s(produtoprincipal.nome)),
+                          ]),
+                          _vm._v(" "),
+                          produtoprincipal.descricao.length < 100
+                            ? _c(
+                                "p",
+                                {
+                                  staticClass: "card-text",
+                                  staticStyle: {
+                                    "font-size": "1.1rem",
+                                    color: "#14171d",
                                   },
                                 },
+                                [
+                                  _vm._v(
+                                    "\n                                    " +
+                                      _vm._s(produtoprincipal.nome_dois) +
+                                      "\n                                "
+                                  ),
+                                ]
+                              )
+                            : _c(
+                                "p",
+                                {
+                                  staticClass: "card-text",
+                                  staticStyle: {
+                                    "font-size": "1.2rem",
+                                    color: "#14171d",
+                                  },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                    " +
+                                      _vm._s(
+                                        produtoprincipal.nome_dois.substring(
+                                          0,
+                                          30
+                                        ) + ".."
+                                      ) +
+                                      "\n\n                                "
+                                  ),
+                                ]
+                              ),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "card-footer bg-white",
+                            staticStyle: { "border-top": "1px solid #39f" },
+                          },
+                          [
+                            _c(
+                              "small",
+                              {
+                                staticClass:
+                                  "text-muted d-flex justify-content-center",
                               },
                               [
                                 _c(
@@ -36253,12 +36301,12 @@ var render = function () {
                                 ),
                               ]
                             ),
-                          ],
-                          1
+                          ]
                         ),
                       ]
                     ),
-                  ]
+                  ],
+                  1
                 )
               }),
               0
@@ -36545,7 +36593,46 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm._m(0),
+    _c(
+      "section",
+      { staticClass: "page-banner bg_cover position-relative z-1" },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row align-items-center" }, [
+            _vm._m(4),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-lg-6" }, [
+              _vm.sobrepri.imagem_padrao == null ||
+              _vm.sobrepri.imagem_padrao == ""
+                ? _c("div", { staticClass: "page-banner-img" }, [
+                    _c("img", {
+                      attrs: {
+                        src: "assets/images/breadcrumb/img-1.jpg",
+                        alt: "",
+                      },
+                    }),
+                  ])
+                : _c("div", { staticClass: "page-banner-img" }, [
+                    _c("img", {
+                      attrs: {
+                        src: "levelschool/" + _vm.sobrepri.imagem_padrao,
+                        alt: "Image",
+                      },
+                    }),
+                  ]),
+            ]),
+          ]),
+        ]),
+      ]
+    ),
     _vm._v(" "),
     _c("section", { staticClass: "about-area about-area-v3 pt-210 pb-50" }, [
       _c("div", { staticClass: "container" }, [
@@ -36576,7 +36663,7 @@ var render = function () {
           _vm._v(" "),
           _c("div", { staticClass: "col-lg-6" }, [
             _c("div", { staticClass: "text-wrapper mb-50 wow fadeInRight" }, [
-              _vm._m(1),
+              _vm._m(5),
               _vm._v(" "),
               _c(
                 "p",
@@ -36652,7 +36739,7 @@ var render = function () {
       },
       [
         _c("div", { staticClass: "container" }, [
-          _vm._m(2),
+          _vm._m(6),
           _vm._v(" "),
           _c(
             "div",
@@ -36749,84 +36836,67 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "section",
-      { staticClass: "page-banner bg_cover position-relative z-1" },
-      [
-        _c("div", { staticClass: "shape shape-one scene" }, [
-          _c("span", { attrs: { "data-depth": "1" } }, [
-            _c("img", {
-              attrs: { src: "assets/images/shape/shape-1.png", alt: "" },
-            }),
-          ]),
-        ]),
+    return _c("div", { staticClass: "shape shape-one scene" }, [
+      _c("span", { attrs: { "data-depth": "1" } }, [
+        _c("img", {
+          attrs: { src: "assets/images/shape/shape-1.png", alt: "" },
+        }),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "shape shape-two scene" }, [
+      _c("span", { attrs: { "data-depth": "2" } }, [
+        _c("img", {
+          attrs: { src: "assets/images/shape/shape-2.png", alt: "" },
+        }),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "shape shape-three scene" }, [
+      _c("span", { attrs: { "data-depth": "3" } }, [
+        _c("img", {
+          attrs: { src: "assets/images/shape/shape-3.png", alt: "" },
+        }),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "shape shape-four scene" }, [
+      _c("span", { attrs: { "data-depth": "4" } }, [
+        _c("img", {
+          attrs: { src: "assets/images/shape/shape-2.png", alt: "" },
+        }),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-6" }, [
+      _c("div", { staticClass: "page-title" }, [
+        _c("h1", [_vm._v(" Sobre nós ")]),
         _vm._v(" "),
-        _c("div", { staticClass: "shape shape-two scene" }, [
-          _c("span", { attrs: { "data-depth": "2" } }, [
-            _c("img", {
-              attrs: { src: "assets/images/shape/shape-2.png", alt: "" },
-            }),
+        _c("ul", { staticClass: "breadcrumbs-link" }, [
+          _c("li", [
+            _c("a", { attrs: { href: "index.html" } }, [_vm._v("Home")]),
           ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "active" }, [_vm._v(" Sobre nós ")]),
         ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "shape shape-three scene" }, [
-          _c("span", { attrs: { "data-depth": "3" } }, [
-            _c("img", {
-              attrs: { src: "assets/images/shape/shape-3.png", alt: "" },
-            }),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "shape shape-four scene" }, [
-          _c("span", { attrs: { "data-depth": "4" } }, [
-            _c("img", {
-              attrs: { src: "assets/images/shape/shape-2.png", alt: "" },
-            }),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row align-items-center" }, [
-            _c("div", { staticClass: "col-lg-6" }, [
-              _c("div", { staticClass: "page-title" }, [
-                _c("h1", [_vm._v(" Sobre nós ")]),
-                _vm._v(" "),
-                _c("ul", { staticClass: "breadcrumbs-link" }, [
-                  _c("li", [
-                    _c("a", { attrs: { href: "index.html" } }, [
-                      _vm._v("Home"),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "active" }, [_vm._v(" Sobre nós ")]),
-                ]),
-              ]),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-lg-6" }, [
-              _c("div", { staticClass: "page-banner-img" }, [
-                _c("img", {
-                  attrs: { src: "assets/images/breadcrumb/img-1.jpg", alt: "" },
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "play-content" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "video-popup",
-                      attrs: {
-                        href: "https://www.youtube.com/watch?v=AT6oSIDbGkw",
-                      },
-                    },
-                    [_c("i", { staticClass: "fas fa-play" })]
-                  ),
-                ]),
-              ]),
-            ]),
-          ]),
-        ]),
-      ]
-    )
+      ]),
+    ])
   },
   function () {
     var _vm = this

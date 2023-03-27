@@ -69,7 +69,7 @@
                 <div class="img-holder mb-50 wow fadeInRight">
                     <div class="shape shape-icon-one scene" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;"><span data-depth="1" style="transform: translate3d(-17.3px, 6.8px, 0px); transform-style: preserve-3d; backface-visibility: hidden; display: block;"><img src="assets/images/shape/shape-4.png" alt=""></span></div>
                     <div class="shape shape-icon-two"><span></span></div>
-                    <img src="assets/images/contact/contact-1.jpg" alt="Contact Image">
+                    <img src="assets/images/contact/sobre.png" alt="Contact Image">
                 </div>
             </div>
         </div>

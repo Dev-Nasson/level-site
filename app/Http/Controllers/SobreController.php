@@ -25,198 +25,181 @@ class SobreController extends Controller {
         ->where('sobres.status',0)
        ->orderBy('sobres.id','DESC')
        ->get();
+
         return view('admin.sobre.index',compact('artigos'));
     }
 
-     public function sobressegu(){
 
-        $sobressegu = DB::table('sobres')
+    public function sobrepri(){
+        $sobrepri = DB::table('sobres')
         ->join('imagems','sobres.imagem_id','imagems.id')
         ->select('imagems.imagem_padrao','imagems.imagem_mini','sobres.*')
         ->where('sobres.status',0)
-        ->where('sobres.numero_setion',2)
-       ->first();
-     //  $sobres = Inicio::where('numero_setion',1)->first(); // para vue js
-       return $sobressegu;
-
-     }
-
-
-     public function sobrestres(){
-
-        $sobrestres = DB::table('sobres')
-        ->join('imagems','sobres.imagem_id','imagems.id')
-        ->select('imagems.imagem_padrao','imagems.imagem_mini','sobres.*')
-        ->where('sobres.status',0)
-        ->where('sobres.numero_setion',3)
-        ->orderBy('sobres.id','DESC')
-       ->get();
-     //  $sobres = Inicio::where('numero_setion',1)->first(); // para vue js
-       return $sobrestres;
-
-     }
-
-     public function pegaid($id){
-
-         $pegaid = Sobre::find($id);
-
-     //  $sobres = Inicio::where('numero_setion',1)->first(); // para vue js
-       return $pegaid;
-
-     }
-
-
-    public function create(){
-
-        return view('admin.sobre.create');
+        ->where('sobres.numero_setion',1)
+        ->first();
+        //  $sobres = Inicio::where('numero_setion',1)->first(); // para vue js
+        return $sobrepri;
     }
 
 
-    public function store(Request $request){
 
-        $validacao = $request->validate(
-            [
-            'titulo' => 'required',
-            'descricao' => 'required',
-            'seccao'=>'required',
-            ],
+        public function sobressegu(){
+            $sobressegu = DB::table('sobres')
+            ->join('imagems','sobres.imagem_id','imagems.id')
+            ->select('imagems.imagem_padrao','imagems.imagem_mini','sobres.*')
+            ->where('sobres.status',0)
+            ->where('sobres.numero_setion',2)
+            ->first();
+            //  $sobres = Inicio::where('numero_setion',1)->first(); // para vue js
+            return $sobressegu;
+        }
 
-            [
-                'titulo.required'=>' O titulo é obrigatório ',
-                'descricao.required'=>' A descrição é obrigatório ',
-                'seccao.required'=>' A secção é obrigatório',
+        public function sobrestres(){
+            $sobrestres = DB::table('sobres')
+            ->join('imagems','sobres.imagem_id','imagems.id')
+            ->select('imagems.imagem_padrao','imagems.imagem_mini','sobres.*')
+            ->where('sobres.status',0)
+            ->where('sobres.numero_setion',3)
+            ->orderBy('sobres.id','DESC')
+            ->get();
+            //  $sobres = Inicio::where('numero_setion',1)->first(); // para vue js
+             return $sobrestres;
+        }
 
-             ]
+        public function pegaid($id){
+            $pegaid = Sobre::find($id);
+            //$sobres = Inicio::where('numero_setion',1)->first(); // para vue js
+            return $pegaid;
 
-        );
+        }
 
+        public function create(){
+            return view('admin.sobre.create');
+        }
 
-        $titulo = $request->titulo;
-        $icone = $request->icone;
-        $descricao = $request->descricao;
-        $seccao = $request->seccao;
+        public function store(Request $request){
 
-                 if (!empty($request->file('imagem_produto') ) ) {
+            $validacao = $request->validate(
+                [
+                'titulo' => 'required',
+                'descricao' => 'required',
+                'seccao'=>'required',
+                ],
 
-                if ($seccao==1) {
+                [
+                    'titulo.required'=>' O titulo é obrigatório ',
+                    'descricao.required'=>' A descrição é obrigatório ',
+                    'seccao.required'=>' A secção é obrigatório',
+                ]
 
-                            // IMAGEM 1
-             $img_um = $request->file('imagem_produto');
-             $nome_500_um = hexdec(uniqid()).'.'.$img_um->getClientOriginalExtension();
-             Image::make($img_um)->save('levelschool/img/produtos/padrao/500v712_'.$nome_500_um); //->resize(570,415)
-             $nm_500_um = 'img/produtos/padrao/500v712_'.$nome_500_um;
+            );
 
-             $nome_100_um = hexdec(uniqid()).'.'.$img_um->getClientOriginalExtension();
-             Image::make($img_um)->resize(100,60)->save('levelschool/img/produtos/100/100v60_'.$nome_100_um);
-             $nm_100_um = 'img/produtos/100/100v60_'.$nome_100_um;
+                                $titulo = $request->titulo;
+                                $icone = $request->icone;
+                                $descricao = $request->descricao;
+                                $seccao = $request->seccao;
 
-                } elseif ($seccao==2) {
+                                if (!empty($request->file('imagem_produto') ) ) {
 
+                                if ($seccao==1) {
 
-                            // IMAGEM 2
-                            $img_um = $request->file('imagem_produto');
-                            $nome_500_um = hexdec(uniqid()).'.'.$img_um->getClientOriginalExtension();
-                            Image::make($img_um)->save('levelschool/img/produtos/padrao/500v712_'.$nome_500_um); //->resize(709,669)
-                            $nm_500_um = 'img/produtos/padrao/500v712_'.$nome_500_um;
+                                // IMAGEM 1
+                                $img_um = $request->file('imagem_produto');
+                                $nome_500_um = hexdec(uniqid()).'.'.$img_um->getClientOriginalExtension();
+                                Image::make($img_um)->resize(570,415)->save('levelschool/img/produtos/padrao/500v712_'.$nome_500_um); //->resize(570,415)
+                                $nm_500_um = 'img/produtos/padrao/500v712_'.$nome_500_um;
 
-                            $nome_100_um = hexdec(uniqid()).'.'.$img_um->getClientOriginalExtension();
-                            Image::make($img_um)->resize(100,60)->save('levelschool/img/produtos/100/100v60_'.$nome_100_um);
-                            $nm_100_um = 'img/produtos/100/100v60_'.$nome_100_um;
+                                $nome_100_um = hexdec(uniqid()).'.'.$img_um->getClientOriginalExtension();
+                                Image::make($img_um)->resize(100,60)->save('levelschool/img/produtos/100/100v60_'.$nome_100_um);
+                                $nm_100_um = 'img/produtos/100/100v60_'.$nome_100_um;
 
+                                } elseif ($seccao==2) {
 
-                         } elseif ($seccao==4) {
+                                // IMAGEM 2
+                                $img_um = $request->file('imagem_produto');
+                                $nome_500_um = hexdec(uniqid()).'.'.$img_um->getClientOriginalExtension();
+                                Image::make($img_um)->save('levelschool/img/produtos/padrao/500v712_'.$nome_500_um); //->resize(709,669)
+                                $nm_500_um = 'img/produtos/padrao/500v712_'.$nome_500_um;
 
-                            // IMAGEM 3
-                            $img_um = $request->file('imagem_produto');
-                            $nome_500_um = hexdec(uniqid()).'.'.$img_um->getClientOriginalExtension();
-                            Image::make($img_um)->save('levelschool/img/produtos/padrao/500v712_'.$nome_500_um); // ->resize(470,580)
-                            $nm_500_um = 'img/produtos/padrao/500v712_'.$nome_500_um;
+                                $nome_100_um = hexdec(uniqid()).'.'.$img_um->getClientOriginalExtension();
+                                Image::make($img_um)->resize(100,60)->save('levelschool/img/produtos/100/100v60_'.$nome_100_um);
+                                $nm_100_um = 'img/produtos/100/100v60_'.$nome_100_um;
 
-                            $nome_100_um = hexdec(uniqid()).'.'.$img_um->getClientOriginalExtension();
-                            Image::make($img_um)->resize(100,60)->save('levelschool/img/produtos/100/100v60_'.$nome_100_um);
-                            $nm_100_um = 'img/produtos/100/100v60_'.$nome_100_um;
+                                } elseif ($seccao==4) {
+
+                                    // IMAGEM 3
+                                    $img_um = $request->file('imagem_produto');
+                                    $nome_500_um = hexdec(uniqid()).'.'.$img_um->getClientOriginalExtension();
+                                    Image::make($img_um)->save('levelschool/img/produtos/padrao/500v712_'.$nome_500_um); // ->resize(470,580)
+                                    $nm_500_um = 'img/produtos/padrao/500v712_'.$nome_500_um;
+
+                                    $nome_100_um = hexdec(uniqid()).'.'.$img_um->getClientOriginalExtension();
+                                    Image::make($img_um)->resize(100,60)->save('levelschool/img/produtos/100/100v60_'.$nome_100_um);
+                                    $nm_100_um = 'img/produtos/100/100v60_'.$nome_100_um;
+                    }
+
+                }else {
+                $nm_500_um ='';
+                $nm_100_um ='';
                 }
 
-             }else {
-             $nm_500_um ='';
-             $nm_100_um ='';
-             }
 
+                $Imageprod =Imagem::create([
+                    'imagem_padrao'=>$nm_500_um,
+                    'imagem_mini'=>$nm_100_um,
+                    'status'=>0,
+                ]);
 
-             $Imageprod =Imagem::create([
-                 'imagem_padrao'=>$nm_500_um,
-                 'imagem_mini'=>$nm_100_um,
-                 'status'=>0,
-             ]);
+                if ($Imageprod) {
 
-             if ($Imageprod) {
+                    $pegaiamgem = Imagem::orderBy('id','desc')->first();
 
-                 $pegaiamgem = Imagem::orderBy('id','desc')->first();
+            $PageInicio = Sobre::create([
+                'imagem_id'=>$pegaiamgem->id,
+                'titulo'=>$titulo,
+                'icone'=>$icone,
+                'descricao'=>$descricao,
+                'numero_setion'=>$seccao,
+                'status'=>0,
+            ]);
 
-           $PageInicio = Sobre::create([
-             'imagem_id'=>$pegaiamgem->id,
-             'titulo'=>$titulo,
-             'icone'=>$icone,
-             'descricao'=>$descricao,
-             'numero_setion'=>$seccao,
-             'status'=>0,
-          ]);
+                }
 
-             }
+                return redirect()->route('sobre.index')->withSuccessMessage('sobre postado com êxito');
+        }
 
-            return redirect()->route('sobre.index')->withSuccessMessage('sobre postado com êxito');
+        public function show(Sobre $sobre){
+        }
 
+        public function edit($id){
+            $sobre = sobre::find($id);
+            return view('admin.sobre.edit',compact('sobre'));
+        }
 
-
-
-    }
-
-
-    public function show(Sobre $sobre){
-
-
-
-
-
-
-    }
-
-
-    public function edit($id){
-
-
-        $sobre = sobre::find($id);
-        return view('admin.sobre.edit',compact('sobre'));
-
-
-    }
-
-
-    public function update(Request $request,$id){
+       public function update(Request $request,$id){
 
         $pegaInicio = Sobre::find($id);
         $pegaIMG = Imagem::where('id',$pegaInicio->imagem_id)->first();
 
-       /*  $pegaInicio = DB::table('inicios')
-        ->where('inicios.id',$id)
-        ->join('imagems','inicios.imagem_id','imagems.id')
-        ->select('imagems.imagem_padrao','imagems.imagem_mini')
-       ->first(); */
+            /*$pegaInicio = DB::table('inicios')
+            ->where('inicios.id',$id)
+            ->join('imagems','inicios.imagem_id','imagems.id')
+            ->select('imagems.imagem_padrao','imagems.imagem_mini')
+            ->first();
+             */
 
-       // $Inicio = Inicio::find($id);
-        $titulo = $pegaInicio->titulo;
-        $descricao = $pegaInicio->descricao;
-        $numero_setion = $pegaInicio->numero_setion;
-        $nm_500_um = $pegaIMG->imagem_padrao;
-        $nm_100_um = $pegaIMG->imagem_mini;
-        $data = $request->all();
+            // $Inicio = Inicio::find($id);
+            $titulo = $pegaInicio->titulo;
+            $descricao = $pegaInicio->descricao;
+            $numero_setion = $pegaInicio->numero_setion;
+            $nm_500_um = $pegaIMG->imagem_padrao;
+            $nm_100_um = $pegaIMG->imagem_mini;
+            $data = $request->all();
 
+            $seccao = $request->seccao;
+            $data['numero_setion'] = $seccao;
 
-        $seccao = $request->seccao;
-        $data['numero_setion'] = $seccao;
-
-
-      //  $pegaproduto = Produto::where('id',$id)->first();
+            // $pegaproduto = Produto::where('id',$id)->first();
 
         if (!empty($request->file('imagem_produto') ) ) {
 
@@ -229,7 +212,7 @@ class SobreController extends Controller {
                             // IMAGEM 1
                                 $img_um = $request->file('imagem_produto');
                                 $nome_500_um = hexdec(uniqid()).'.'.$img_um->getClientOriginalExtension();
-                                Image::make($img_um)->save('levelschool/img/produtos/padrao/500v712_'.$nome_500_um); //->resize(570,415)
+                                Image::make($img_um)->resize(570,415)->save('levelschool/img/produtos/padrao/500v712_'.$nome_500_um); //->resize(570,415)
                                 $nm_500_um = 'img/produtos/padrao/500v712_'.$nome_500_um;
                                 $data['imagem_padrao'] = $nm_500_um;
 
@@ -255,7 +238,6 @@ class SobreController extends Controller {
                             $nm_100_um = 'img/produtos/100/100v60_'.$nome_100_um;
                             $data['imagem_mini'] = $nm_100_um;
 
-
                         } elseif ($seccao==4) {
 
                             // IMAGEM 3
@@ -270,44 +252,23 @@ class SobreController extends Controller {
                             $nm_100_um = 'img/produtos/100/100v60_'.$nome_100_um;
                             $data['imagem_mini'] = $nm_100_um;
 
+                            }
 
-                }
-
-
-
-
-
-
-
-
-
-
-
-            }else {
-            $nm_500_um ='';
-            $nm_100_um ='';
-        }
-
-
-
-
+                        }else {
+                        $nm_500_um ='';
+                        $nm_100_um ='';
+                    }
             }
 
             if ($pegaInicio->update($data) && $pegaIMG->update($data) ) {
                 return redirect()->route('sobre.index')->withSuccessMessage('sobre atualizado com êxito');
             }
-
-
-
-
     }
 
 
     public function destroy($id){
 
-
         $idImagem = Sobre::find($id);
-
         $sobre = DB::table('sobres')
         ->where('sobres.id',$id)
         ->join('imagems','sobres.imagem_id','imagems.id')
@@ -330,9 +291,6 @@ class SobreController extends Controller {
         }
 
         return redirect()->route('sobre.index')->withSuccessMessage('Excluido com êxito');
-
-
-
 
     }
 }

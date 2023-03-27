@@ -23,15 +23,41 @@
                             </ul>
                         </div>
                     </div>
+
+
                     <div class="col-lg-6">
-                        <div class="page-banner-img">
+
+                        <div class="page-banner-img" v-if="sobrepri.imagem_padrao == null || sobrepri.imagem_padrao == ''">
                             <img src="assets/images/breadcrumb/img-1.jpg" alt="">
-                            <div class="play-content">
-                                <a href="https://www.youtube.com/watch?v=AT6oSIDbGkw" class="video-popup"><i
-                                        class="fas fa-play"></i></a>
-                            </div>
                         </div>
+
+
+                        <div class="page-banner-img" v-else>
+                            <img :src="'levelschool/' + sobrepri.imagem_padrao" alt="Image">
+                        </div>
+
+
                     </div>
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
             </div>
         </section>
@@ -45,7 +71,7 @@
 
 
                         <div class="img-holder mb-50 wow fadeInLeft" style="border:1px solid #ebebeb;" v-if="sobressegu.imagem_padrao == null || sobressegu.imagem_padrao == ''">
-                            <!-- <img src="assets/images/about/sobre.png" alt=""> -->
+                            <!--<img src="assets/images/about/sobre.png" alt="">-->
                         </div>
 
                         <div class="img-holder mb-50 wow fadeInLeft" style="border:1px solid #ebebeb;" v-else>
@@ -149,10 +175,18 @@ export default {
             sobressegu: '',
             sobrestres:[],
             descricaosobre: false,
+            sobrepri:''
         }
     },
 
     mounted() {
+
+        //sobrepri
+
+        axios.get('/sobrepri').then((response) => {
+                this.sobrepri = response.data
+                console.log(this.sobrepri);
+            }),
 
         axios.get('/sobrestres').then((response) => {
                 this.sobrestres = response.data

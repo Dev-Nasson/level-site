@@ -59,6 +59,7 @@ use Illuminate\Support\Facades\Auth;
     Route::get('/contacpris' ,'ContactoController@contacpris');
 
     //Sobre
+    Route::get('/sobrepri' ,'SobreController@sobrepri');
     Route::get('/sobressegu' ,'SobreController@sobressegu');
     Route::get('/sobrestres' ,'SobreController@sobrestres');
     Route::get('/pegaid/{id}' ,'SobreController@pegaid');

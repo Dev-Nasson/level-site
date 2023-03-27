@@ -80,7 +80,6 @@
                             </VueSlickCarousel>
                            
 
-
                             <div class="shape shape-one">
                                 <span class="animate-float-y"><img src="assets/images/shape/circle-logo-2.png"
                                         class="circle-logo" alt="circle logo"></span>
@@ -101,8 +100,6 @@
                                 {{ inicios.descricao }}
                             </p>
                            
-
-
                         </div>
                     </div>
                 </div>
@@ -153,37 +150,49 @@
 
                     <div class="card-group">
 
+
                         <div class="card mr-3" v-for="(produtoinicio, index) in produtoinicios" :keys="index"  style="border:1px solid rgba(0,0,0,.125);  box-shadow: 0px 6px 12px 0px rgb(0 0 0 / 16%)">
 
-                            <img src="/assets/images/portfolio/img-2.jpg" class="card-img-top" alt=""  v-if="produtoinicio.imagem_um == null || produtoinicio.imagem_um == ''"  >
 
-                            <img :src="'levelschool/' + produtoinicio.imagem_um" alt="Image" v-else>
-
-
-                            <div class="card-body">
-                                <h5 class="card-title">{{ produtoinicio.nome }}</h5>
+                            <router-link class=" " :to="{ name: 'infopro', params: { id: produtoinicio.id }, hash: '#sectiontopo' }">
 
 
-                                <p class="card-text" v-if="produtoinicio.descricao.length < 100" style="font-size: 1.1rem; color: #14171d;">
-                                    {{produtoinicio.nome_dois }}
-                                </p>
+                                <img src="/assets/images/portfolio/img-2.jpg" class="card-img-top" alt=""  v-if="produtoinicio.imagem_um == null || produtoinicio.imagem_um == ''"  >
 
-                                <p class="card-text" v-else  style="font-size: 1.2rem; color: #14171d;">
-                                    {{produtoinicio.nome_dois.substring(0, 30) + ".."}}
+                                <img :src="'levelschool/' + produtoinicio.imagem_um" alt="Image" v-else>
 
-                                </p>
-                            </div>
-                            <div class="card-footer bg-white " style="border-top:1px solid #39f;">
 
-                                <small class="text-muted">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ produtoinicio.nome }}</h5>
 
-                                    <router-link class="nav-link d-flex justify-content-center " :to="{ name: 'infopro', params: { id: produtoinicio.id }, hash: '#sectiontopo' }">
-                                    <span class="btn btn-primary mt-2 ">Saiba mais</span>
-                                   </router-link>
 
-                                </small>
+                                    <p class="card-text" v-if="produtoinicio.descricao.length < 100" style="font-size: 1.1rem; color: #14171d;">
+                                        {{produtoinicio.nome_dois }}
+                                    </p>
 
-                            </div>
+                                    <p class="card-text" v-else  style="font-size: 1.2rem; color: #14171d;">
+                                        {{produtoinicio.nome_dois.substring(0, 30) + ".."}}
+
+                                    </p>
+                                </div>
+
+                                <div class="card-footer bg-white " style="border-top:1px solid #39f;">
+
+                                    <small class="text-muted d-flex justify-content-center">
+
+                                        <span class="btn btn-primary mt-2  ">Saiba mais</span>
+
+                            <!--          <router-link class="nav-link d-flex justify-content-center " :to="{ name: 'infopro', params: { id: produtoinicio.id }, hash: '#sectiontopo' }">
+                                        <span class="btn btn-primary mt-2 ">Saiba mais</span>
+                                    </router-link> -->
+
+                                    </small>
+
+                                </div>
+
+                            </router-link> 
+
+
                         </div>
 
 

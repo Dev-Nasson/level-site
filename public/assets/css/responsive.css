@@ -1,14 +1,52 @@
 /* X-Large devices (large desktops, 1400px and up) */
 @media (min-width: 1400px) {
-    
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    
 }
-/*XX-Large devices (larger desktops, 1400px and up)*/ 
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
 @media only screen and (min-width: 1200px) and (max-width: 1700px) {
+
+
+    .hero-banner-v1 .hero-img.hero-img-one{
+        display: none;
+    }
+    .hero-banner-v1  .hero-content {
+        max-width: 600px;
+    }
+    .hero-banner-v1 .hero-content h1 {
+        margin-bottom: 35px;
+        font-size: 75px;
+        line-height: 80px;
+    }
+    .cta-area-v1 .cta-wrapper .section-title h2 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .hero-banner-v1 .shape-one {
+        top: 130px;
+        left: 30px;
+    }
+    .testimonial-slider-one .slick-dots {
+        right: -15%;
+    }
+    .fancy-text-block-v1 .img-holder .shape.shape.shape-two {
+        display: none;
+    }
+    .navigation-style-v3 .primary-menu .site-branding .lang-dropdown:before {
+        margin-right: 20px;
+    }
+    .navigation-style-v3 .primary-menu .site-branding .lang-dropdown {
+        margin-left: 20px;
+    }
+}
+
+/*XX-Large devices (fullscreen, 1400px and up)*/
+@media only screen and (min-width: 5500px) and (max-width: 5000px) {
+
+
     .hero-banner-v1 .hero-img.hero-img-one{
         display: none;
     }
@@ -161,6 +199,7 @@
         line-height: 65px;
     }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .section-title h2{
         font-size: 45px;
@@ -337,7 +376,6 @@
     }
 }
 
-
 @media (max-width: 767px){
     .section-title h2{
         font-size: 30px;
@@ -461,6 +499,7 @@
         line-height: 30px;
     }
 }
+
 @media (max-width: 400px){
     .about-area-v1 .shape-one {
         bottom: -20px;
@@ -489,6 +528,7 @@
         margin-bottom: 25px;
     }
 }
+
 @media only screen and (min-width: 415px) and (max-width: 767px) {
     .partners-wrapper .partner-item {
         flex: 0 0 33.33%;

@@ -79,44 +79,46 @@
 
                     <div class="card-group">
 
-<div class="card mr-3" v-for="(produtoprincipal, index) in produtoprincipals" :keys="index"  style="border:1px solid rgba(0,0,0,.125);  box-shadow: 0px 6px 12px 0px rgb(0 0 0 / 16%)">
+                        <div class="card mr-3" v-for="(produtoprincipal, index) in produtoprincipals" :keys="index" style="border:1px solid rgba(0,0,0,.125);  box-shadow: 0px 6px 12px 0px rgb(0 0 0 / 16%)">
 
-    <img src="/assets/images/portfolio/img-2.jpg" class="card-img-top" alt=""  v-if="produtoprincipal.imagem_um == null || produtoprincipal.imagem_um == ''"  >
+                            <router-link class=" " :to="{ name: 'infopro', params: { id: produtoprincipal.id }, hash: '#sectiontopo' }">
 
-    <img :src="'levelschool/' + produtoprincipal.imagem_um" alt="Image" v-else>
+                                <img src="/assets/images/portfolio/img-2.jpg" class="card-img-top" alt=""
+                                    v-if="produtoprincipal.imagem_um == null || produtoprincipal.imagem_um == ''">
 
-
-    <div class="card-body">
-        <h5 class="card-title">{{ produtoprincipal.nome }}</h5>
-
-        
-        <p class="card-text" v-if="produtoprincipal.descricao.length < 100" style="font-size: 1.1rem; color: #14171d;">
-            {{produtoprincipal.nome_dois }}
-        </p>
-
-        <p class="card-text" v-else  style="font-size: 1.2rem; color: #14171d;">
-            {{produtoprincipal.nome_dois.substring(0, 30) + ".."}}
-                                               
-        </p>
-    </div>
-    <div class="card-footer bg-white " style="border-top:1px solid #39f;">
-
-        <small class="text-muted">
-
-            <router-link class="nav-link d-flex justify-content-center " :to="{ name: 'infopro', params: { id: produtoprincipal.id }, hash: '#sectiontopo' }">
-            <span class="btn btn-primary mt-2 ">Saiba mais</span>
-           </router-link>
-
-        </small>
-        
-    </div>
-</div>
+                                <img :src="'levelschool/' + produtoprincipal.imagem_um" alt="Image" v-else>
 
 
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ produtoprincipal.nome }}</h5>
+
+                                    <p class="card-text" v-if="produtoprincipal.descricao.length < 100"
+                                        style="font-size: 1.1rem; color: #14171d;">
+                                        {{ produtoprincipal.nome_dois }}
+                                    </p>
+
+                                    <p class="card-text" v-else style="font-size: 1.2rem; color: #14171d;">
+                                        {{ produtoprincipal.nome_dois.substring(0, 30) + ".." }}
+
+                                    </p>
+                                </div>
+
+                                <div class="card-footer bg-white " style="border-top:1px solid #39f;">
+
+                                    <small class="text-muted d-flex justify-content-center">
+                                            <span class="btn btn-primary mt-2 ">Saiba mais</span>
+                                    </small>
+                                </div>
+
+                            </router-link>     
+
+                        </div>
 
 
 
-</div>
+
+
+                    </div>
 
 
 
@@ -205,6 +207,5 @@ export default {
     border-top: 1px solid #ebebeb;
     border-left: 1px solid #ebebeb;
     border-right: 1px solid #ebebeb;
-}
-</style>
+}</style>
 
